@@ -9,8 +9,49 @@
 .externalNativeBuild
 .cxx
 
-# --- Capa de Seguridad Extra (Recomendado) ---
+# --- VS Code ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- Archivos generados / temporales ---
+*.log
+*.tmp
+*.temp
+*.orig
+*.rej
+*.bak
+
+# --- Dependencias y cachés locales ---
+/.gradle/
+/gradle/wrapper/*.jar
+/.idea/**
+/.kotlin/
+/.fleet/
+
+# --- Secrets / claves / configuración sensible ---
 *.keystore
 *.jks
-*.pepk
+*.p12
+*.pem
+*.key
+*.crt
+*.p8
+*.mobileprovision
+*.entitlements
 google-services.json
+secrets.properties
+local.properties
+*.properties
+!gradle.properties
+
+# --- Artefactos de publicación / firmado ---
+/app/release/
+/app/debug/
+/app/*.apk
+/app/*.aab
+/app/*.aar
+/app/*.apks
